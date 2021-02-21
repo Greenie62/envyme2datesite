@@ -1,0 +1,222 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position:relative;
+}
+
+
+.dashApp .messagesContainer, .userProfileContainer{
+    height:100vh;
+    width:100vw;
+}
+
+.dashHeader, .dashFooter{
+    height:10vh;
+    width:100%;
+    text-align:center;
+    }
+
+.dashHeader{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    text-shadow:2px -4px 8px gray;
+}
+
+.likesAlertDiv{
+    width:7px;
+    height:7px;
+    border-radius:50%;
+    background:red;
+}
+
+.dashHeaderh1{
+    text-shadow:2px -4px 8px gray;
+
+}
+
+.headerh1iconone{
+    margin-left:10%;
+    display:flex;
+    cursor:pointer;
+}
+
+.headerh1icontwo{
+    margin-right:10%;
+    cursor:pointer;
+}
+
+.dashHeaderh1::after{
+    content:"2";
+    color:red;
+}
+
+.span2{
+    color:red;
+}
+
+.mainDashboardArea{
+    height:85vh;
+    width:100%;
+}
+
+.mainRow{
+    height:80%;
+    width:100%;
+    /* top:20%; */
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.actionRow{
+    height:20%;
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content: space-evenly;
+    text-align:center;
+}
+
+.actioniconone{
+    left:-10px
+}
+
+.actioniconthree{
+    left:10px;
+}
+
+
+ .imagePanelCol{
+    height:100%;
+}
+
+
+
+.imagePanelCol{
+    width:100%;
+    height:100%;
+    /* border:5px solid blue; */
+}
+
+.imagePanelCard{
+    height:100%;
+    width:100%;
+    /* background:orange; */
+    /* border:10px solid orange; */
+}
+
+.rightArrowBtn, .leftArrowBtn{
+    border-radius:50px;
+    height:50px;
+    width:70px;
+    background:white;
+    box-shadow:3px 3px 8px black;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    cursor:pointer;
+    position:absolute;
+    top:0;
+    left:0;
+    top:70%;
+}
+
+.leftArrowBtn{
+    box-shadow:-3px 3px 8px black;
+    left:0%;
+}
+
+.rightArrowBtn{
+    left:80%;
+}
+
+
+.profileCard{
+    width:100%;
+    height:15%;
+    top:85%;
+    /* border:3px solid black; */
+    position:absolute;
+    background:lightgray;
+    opacity:.8;
+}
+
+.h4info{
+    left:5%;
+    top:10%;
+    font-size:20px;
+    color:white;
+    text-shadow:1px 1px 1px black;
+}
+
+.h4email{
+    color:blue;
+}
+
+.h4email:hover{
+    text-decoration:underline;
+}
+
+.messageDiv{
+    height:15%;
+    width:100%;
+    text-align:center;
+    position:absolute;
+    top:35%;
+}
+
+.h4message{
+    /* position:absolute; */
+    /* left:25%;
+    top:30%; */
+    color:white;
+    text-shadow:2px 1px 3px black;
+}
+
+
+.userPic{
+    height:100%;
+    width:100%;
+    transition:1s ease;
+    /* animation:flash 2s forwards; */
+
+}
+
+.flash{
+    opacity:0;
+    animation:flash 1s forwards;
+}
+
+@keyframes flash{
+    50%{opacity:0}
+    100%{opacity:1}
+}
+
+
+.userProfileContainer{
+   display:flex;
+   flex-direction:column;
+   align-items:center;
+   justify-content: space-evenly;
+}
+
+.messagesContainer{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: space-evenly;
+}
+
+.likePersonItem{
+    display:flex;
+    list-style:none;
+    justify-content: space-evenly;
+    align-items:center;
+}
+
+.dashFooter{
+    height:5vh;
+}
